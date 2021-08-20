@@ -1,0 +1,19 @@
+{
+  "name": "node-express-docker-hello-world",
+  "author": {
+    "name": "Nikita Zdvijkov",
+    "url": "http://nznz.me/"
+  },
+  "license": "MIT",
+  "description": "Node, Express, Docker Hello World",
+  "private": true,
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "docker": "docker build -t my-container-name . && docker run -p 4123:3000 -d my-container-name"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
